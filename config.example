@@ -1,0 +1,13 @@
+server_log_level=debug
+server_secret=secret
+server_ip=0.0.0.0
+server_port=9999
+server_rps_target=10
+server_challenge_len=8
+server_challenge_ttl=1s
+server_challenge_pool_cleanup_interval=1s
+server_connread_ttl=0
+server_connwrite_ttl=0
+client_server_addr=127.0.0.1:9999
+client_connread_ttl=0
+client_connwrite_ttl=0
