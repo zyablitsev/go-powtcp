@@ -17,7 +17,7 @@ import (
 	"powtcp/proto"
 )
 
-var quotes = [2]string{
+var quotes = []string{
 	"Don't be a Jack of all trades and master of none.",
 	"Be sticky to your research goal.",
 }

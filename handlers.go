@@ -119,7 +119,7 @@ func (s *Service) handleResponseChallenge(conn net.Conn, i interface{}) error {
 	}
 
 	// create protocol message with quote
-	quote := quotes[response.Nonce%2]
+	quote := quotes[response.Nonce%uint64(len(quotes))]
 	message := proto.Message{
 		MessageType: proto.ResponseServiceType,
 		Data:        []byte(quote),
